@@ -1,0 +1,30 @@
+#include<stdio.h>
+main()
+{
+        int a[20],i,count=0,n;
+        printf("enter no pf values");
+        scanf("%d",&n);
+        for(i=0;i<n;i++)
+        {
+                scanf("%d",&a[i]);
+        }
+        for(i=0;i<n;i++)
+        {
+                if(a[i]==0)
+                {
+                        count=count++;
+                }
+        }
+        for(i=0;i<count;i++)
+        {
+                a[i]=0;
+        }
+        for(i=count;i<n;i++)
+        {
+                a[i]=1;
+        }
+        for(i=0;i<n;i++)
+        {
+                printf("%d",a[i]);
+        }
+}
